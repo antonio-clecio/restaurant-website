@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
   <title>ROYATE Restaurant</title>
 </head>
@@ -35,7 +37,160 @@
     </div>
   </header>
   <!-- header section end -->
+
+  <!-- slider section start -->
+  <div class="home" id="home">
+    <div class="swiper home-slider">
+      <div class="swiper-wrapper wrapper">
+        <div class="swiper-slide slide slide1">
+          <div class="content">
+            <img src="./img/crown-symbol.png" />
+            <h3>delicious royate</h3>
+            <h1>gift voucher</h1>
+            <p>give away your beloved customers</p>
+            <a href="#" class="btn">order now</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide slide2">
+          <div class="content">
+            <img src="./img/crown-symbol.png" />
+            <h3>sale of 10% this dish</h3>
+            <h1>the fresh</h1>
+            <p>food restaurant</p>
+            <a href="#" class="btn">order now</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide slide3">
+          <div class="content">
+            <img src="./img/crown-symbol.png" />
+            <h3>we are open</h3>
+            <h1>fresh fruits</h1>
+            <p>you will love it</p>
+            <a href="#" class="btn">order now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <!-- slider section ends -->
+
+  <section class="welcome" id="about">
+    <h1 class="heading">WELCOME TO ROYATE</h1>
+    <center><h3 class="sub-heading"> ~ Luxury & Quality ~ </h3></center>
+
+    <div class="box-container">
+      <div class="box">
+        <div class="image">
+          <img src="./img/post-thumb-1.jpg" />
+        </div>
+
+        <div class="content">
+          <h3>PROFESSIONAL LEVEL</h3>
+          <p>nor again is there anyone who loves or pursues or desires to obtain pain of itself, becuase it is pain, but because occasionally circumstances occur.</p>
+
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img src="./img/post-thumb-2.jpg" />
+        </div>
+
+        <div class="content">
+          <h3>FRESH FOOD GUARANTEED</h3>
+          <p>nor again is there anyone who loves or pursues or desires to obtain pain of itself, becuase it is pain, but because occasionally circumstances occur.</p>
+
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img src="./img/post-thumb-3.jpg" />
+        </div>
+
+        <div class="content">
+          <h3>THE MENU IS PLENTIFUL</h3>
+          <p>nor again is there anyone who loves or pursues or desires to obtain pain of itself, becuase it is pain, but because occasionally circumstances occur.</p>
+
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- welcome section start -->
+
+  <!-- our menu section start -->
+  <section class="our-menu" id="menu">
+    <h1 class="heading">our food menu</h1>
+    <center><h3 class="sub-heading"> ~ see what we offer ~ </h3></center>
+    
+    <div class="menu-container">
+      <div class="item">
+        <div class="item-name">
+          <h2>Main Course</h2>
+          <img src="./img/drinks.png" />
+        </div>
+
+        <div class="item-body">
+          <div class="item-menu">
+            <h3>Super-Delicious Zuppa Toscana</h3>
+            <span class="dots"></span>
+            <h3>$40</h3>
+
+            <ul>
+              <li><a href="#">Chicken</a></li>
+              <li><a href="#">Italian</a></li>
+              <li><a href="#">Sausage</a></li>
+              <li><a href="#">Spinach</a></li>
+            </ul>
+          </div>
+
+          <div class="item-menu">
+            <h3>Super-Delicious Zuppa Toscana</h3>
+            <span class="dots"></span>
+            <h3>$26</h3>
+
+            <ul>
+              <li><a href="#">Mushrooms</a></li>
+              <li><a href="#">Italian</a></li>
+              <li><a href="#">Sausage</a></li>
+              <li><a href="#">Spinach</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   
+
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".home-slider", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      loop:true,
+    });
+  </script>
 
   <script type="text/javascript">
     let menu = document.querySelector('#menu');
